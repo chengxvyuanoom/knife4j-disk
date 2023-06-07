@@ -1,0 +1,11 @@
+server:
+  port: 19082
+knife4j:
+  enableAggregation: true
+  disk:
+    enable: true
+    routes:
+      - name: 项目名称
+#        location: classpath:openapi/test.json
+        swagger-version: 2.0
+        location: http://49.232.155.107:8080/v2/api-docs
